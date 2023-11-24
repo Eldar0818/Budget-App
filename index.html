@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>EDR BUDGET TRACKER APP</title>
+</head>
+<body>
+    <h1 class="heading">BUDGET TRACKER APP</h1>
+    <div class="tracker">
+        <div class="tracker-boxes">
+            <div class="tracker-box green-tracker">
+                <h2>Income:</h2>
+                <span id="income">10000 SEK</span>
+            </div>
+            <div class="tracker-box red-tracker">
+                <h2>Expanse:</h2>
+                <span id="expanse">7000 SEK</span>
+            </div>
+            <div class="tracker-box blue-tracker">
+                <h2>Balance:</h2>
+                <span id="balance">3000 SEK</span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="list-wrapper" id="budgets-list">
+            <!-- <div class="list-item">
+                <p>We have spending on Grocery about 158 kr, Date: 2023-11-22</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="list-item">
+                <p>We have income from State Insurence about 3900 kr, Date: 2023-11-23</p>
+                <button class="remove-btn">Remove</button>
+            </div> -->
+        </section>
+        <section class="launcher-wrapper">
+            <form class="add-form" id="add-form">
+                <div class="inputs">
+                    <label for="b-type">Budget Type:</label>
+                    <select id="b-type">
+                        <option value="-">-</option>
+                        <option value="Income">Income</option>
+                        <option value="Spending">Spending</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label for="b-amount">Amount</label>
+                    <input type="number" id="b-amount">
+                </div>
+                <div class="inputs">
+                    <label for="b-name">To / From</label>
+                    <input type="text" id="b-name">
+                </div>
+                <div class="inputs">
+                    <label for="b-date">Date</label>
+                    <input type="date" id="b-date">
+                </div>
+                <div class="btns-form">
+                    <button type="submit">Submit</button>
+                    <button type="button" class="clear-all-btn" id="clear-all-btn">Clear All</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
